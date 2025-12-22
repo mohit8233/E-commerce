@@ -67,7 +67,7 @@
     position: relative;
     z-index: -1;
 }
-/* .box2{
+.box2{
     position: absolute;
     color: white;
     top: 0;
@@ -79,7 +79,7 @@
     padding-right: 20px;
 
     justify-content: space-between;
-} */
+}
 
 .img-box{
     display: flex;
@@ -116,7 +116,7 @@
 .dots span.active{
     background: rgb(193, 135, 135);
 }
-/* .card{
+.card{
     font-size: 23px;
 }
 .card2{
@@ -128,7 +128,7 @@
     height: 40px;
     justify-items: end;
     /* margin-left: 120px; */
-/* } */
+}
     /* ================= MEDIA QUERIES ================= */
 
     /* 772px – 992px */
