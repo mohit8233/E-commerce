@@ -76,3 +76,5 @@ function resetAutoSlide(){
    START AUTO SLIDER
 ========================= */
 startAutoSlide();
+
+
