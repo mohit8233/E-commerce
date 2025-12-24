@@ -284,7 +284,9 @@
         .main-4{
     grid-template-columns: auto;
   } 
-  
+   .heading h1{
+        font-size: 2.2rem;
+      }
 
      }
     /* 576px – 772px */
