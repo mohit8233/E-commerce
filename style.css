@@ -244,7 +244,35 @@
    transform: scale(1.1);
 }
 
-
+.season-section{
+  width: 100%;
+  height: 100vh;
+}
+.season-container{
+  width: 100%;
+  margin-top: 30px;
+  height: 90vh;
+  position: relative;
+  background-image: url("https://cdn.prod.website-files.com/6881474bdd4d06d07447731e/689a68e78a29c4a54515f950_Group%208%20(1).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.season-container h1{
+   position: absolute;
+    font-size: 4rem;
+    color: white;
+    bottom: 30%;
+    left: 30px;
+    text-transform: uppercase;
+}
+.season-container button{
+  padding: 10px;
+   position: absolute;
+   bottom: 20%;
+   left: 40px;
+  width: 270px;
+  cursor: pointer;
+}
     /* ================= MEDIA QUERIES ================= */
 
     /* 772px – 992px */
@@ -261,7 +289,10 @@
      
      }
      
-
+    .season-container{
+     
+      background-position: center;
+    }
     .card h1{
         font-size: 48px;
     }
@@ -318,6 +349,13 @@
     .card2 button{
         width: 16rem;
         padding: 10px;
+    }
+     .season-container{
+      
+      background-position: center;
+    }
+    .season-container h1{
+      font-size: 2.5rem;
     }
     }
 
@@ -387,7 +425,17 @@
 
     .card2 button{
         width: 100%;
+    } .season-container{
+      
+      background-position: center;
     }
+    .season-container h1{
+      font-size: 2.2rem;
+    }
+    .season-container button{
+      width: 200px;
+    }
+
     }
 
     /* 100px – 300px */
