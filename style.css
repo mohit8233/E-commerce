@@ -326,7 +326,7 @@
 
 /* section Slide main  */
 .slide-main{
-  padding: 20px 90px;
+  /* padding: 20px 90px; */
   display: grid;
   grid-template-columns: auto auto;
   width: 100%;
@@ -338,9 +338,9 @@
 
 
 .first-1{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 600px;
-  width: 450px;
+  width: 550px;
   overflow: hidden;
 }
 
@@ -482,19 +482,25 @@ hr{
         font-size: 2.2rem;
       }
       .marquee span{
-  font-size: 1.rem;
+   font-size: 1.rem;
 }
     .slide-main{
     grid-template-columns: auto;
   }
 
-  .first-1{
-    width: 90%;
-  }
+ .first-1 {
+        width: 80%;
+        margin: auto;
+        height: 300px;
+        margin-top: 20px;
+    }
+
+
+
   .secound{
-    width: 90%;
+    width: 100%;
   }
-     }
+}
     /* 576px – 772px */
     @media (min-width:576px) and (max-width:772px){
       .div{
@@ -628,13 +634,15 @@ hr{
     grid-template-columns: auto;
   }
 
-  .first-1{
-    width: 100%;
-  }
-  .secound{
-    width: 100%;
-  }
+ .first-1 {
+        width: 80%;
+        margin: auto;
+        height: 300px;
+        margin-top: 20px;
     }
+}
+
+
 
     /* 100px – 300px */
     @media (min-width:100px) and (max-width:300px){
