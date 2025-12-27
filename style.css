@@ -246,7 +246,7 @@
 
 .season-section{
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 .season-container{
   width: 100%;
@@ -272,6 +272,160 @@
    left: 40px;
   width: 270px;
   cursor: pointer;
+}
+.moving-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  
+  background: black;
+  color: white;
+  padding: 1.8vw 0;
+  white-space: nowrap;
+}
+
+/* Track */
+.track {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 12s linear infinite;
+}
+/* 🔁 Right to Left Animation */
+@keyframes marquee{
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* Left blur */
+.blur-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(to right, black, transparent);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* right blur  */
+.blur-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(to left, black, transparent);
+  z-index: 10;
+  pointer-events: none;
+}
+
+
+/* section Slide main  */
+.slide-main{
+  padding: 20px 90px;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  
+
+}
+
+
+
+
+.first-1{
+  border: 1px solid black;
+  height: 600px;
+  width: 450px;
+  overflow: hidden;
+}
+
+.first-1 img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+  transition: transform 0.5s ease;
+
+
+}
+
+.first-1 img:hover{
+  transform: scale(1.1);
+
+}
+.secound{
+  border: 1px solid black;
+  height: 600px;
+  width: 450px;
+  padding: 70px 0;
+  border: none;
+}
+
+.secound h2{
+  margin: 10px 30px 20px;
+}
+
+hr{
+  width: 90%;
+  margin: auto;
+}
+
+
+.secound h1{
+  margin: 20px ;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.secound p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 20px;
+  font-size: 0.8rem;
+}
+
+.secound h3{
+   margin: 10px 30px 20px;
+  margin-top: 50px;
+  color: red;
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.icon{
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.secound button{
+  /* height: 30px; */
+  padding: 10px;
+  width: 180px;
+  margin-top: 10%;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.secound button:hover{
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.input-num input{
+  height: 30px;
+  width: 50px;
+  margin: 30px;
+  margin-top: 80px;
+  padding: 2px;
 }
     /* ================= MEDIA QUERIES ================= */
 
@@ -301,7 +455,16 @@
         font-size: 20px;
     }
   
-   
+    .slide-main{
+    grid-template-columns: auto;
+  }
+
+  .first-1{
+    width: 100%;
+  }
+  .secound{
+    width: 100%;
+  }
     }
      @media (max-width:768px) {
       .heading h1{
@@ -318,7 +481,19 @@
    .heading h1{
         font-size: 2.2rem;
       }
+      .marquee span{
+  font-size: 1.rem;
+}
+    .slide-main{
+    grid-template-columns: auto;
+  }
 
+  .first-1{
+    width: 90%;
+  }
+  .secound{
+    width: 90%;
+  }
      }
     /* 576px – 772px */
     @media (min-width:576px) and (max-width:772px){
@@ -327,7 +502,11 @@
       }
 
       .navbar .first-list{
-        display: none;
+        font-size: 0.9rem;
+      }
+      .navbar .last-list{
+        font-size: 0.9rem;
+         
       }
        .box2{
         flex-direction: column;
@@ -357,6 +536,16 @@
     .season-container h1{
       font-size: 2.5rem;
     }
+      .slide-main{
+    grid-template-columns: auto;
+  }
+
+  .first-1{
+    width: 100%;
+  }
+  .secound{
+    width: 100%;
+  }
     }
 
     /* 300px – 576px */
@@ -498,4 +687,14 @@
     .container{
         object-fit: contain;
     }
+      .slide-main{
+    grid-template-columns: auto;
+  }
+
+  .first-1{
+    width: 90%;
+  }
+  .secound{
+    width: 90%;
+  }
     }
