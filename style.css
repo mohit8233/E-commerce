@@ -424,7 +424,7 @@ hr{
   height: 30px;
   width: 50px;
   margin: 30px;
-  margin-top: 80px;
+  margin-top: 30px;
   padding: 2px;
 }
     /* ================= MEDIA QUERIES ================= */
@@ -639,6 +639,10 @@ hr{
         margin: auto;
         height: 300px;
         margin-top: 20px;
+    }
+    .secound button{
+      margin-left: 60px;
+      
     }
 }
 
