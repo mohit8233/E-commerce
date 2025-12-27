@@ -624,7 +624,16 @@ hr{
     .season-container button{
       width: 200px;
     }
+   .slide-main{
+    grid-template-columns: auto;
+  }
 
+  .first-1{
+    width: 100%;
+  }
+  .secound{
+    width: 100%;
+  }
     }
 
     /* 100px – 300px */
