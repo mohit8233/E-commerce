@@ -407,6 +407,7 @@ hr{
   padding: 10px;
   width: 180px;
   margin-top: 10%;
+  cursor: pointer;
   border: none;
   border-radius: 5px;
   background-color: black;
@@ -427,6 +428,51 @@ hr{
   margin-top: 30px;
   padding: 2px;
 }
+
+.slide-main2{
+  display: flex;
+  /* border: 2px solid black; */
+  height: 80vh;
+  gap: 20px;
+  padding-top: 60px;
+  margin-top: 30px;
+  background-color: #eeeeee;
+ 
+}
+.first-box{
+  /* border: 2px solid black; */
+  padding-left: 20px;
+  padding-top: 6rem;
+   width: 50%;
+  height: 100%;
+}
+.icon-box{
+  display: flex;
+  padding-top: 2rem;
+  
+}
+.first-box p{
+  padding-top: 2rem;
+}
+.second-box{
+  overflow: hidden;
+  width: 50%;
+  height: 90%;
+}
+.second-box img{
+  width: 100%;
+  
+  
+}
+.second-box img:hover{
+  transform: scale(1.2);
+  transition: 2s;
+}
+/* .text-slider{
+  margin-top: 20px;
+  border: 2px solid black;
+  height: 60vh;
+} */
     /* ================= MEDIA QUERIES ================= */
 
     /* 772px – 992px */
@@ -465,11 +511,24 @@ hr{
   .secound{
     width: 100%;
   }
+  .slide-main2{
+    flex-direction: column;
+  }
+    br{
+    display: none;
+  }
     }
      @media (max-width:768px) {
       .heading h1{
         font-size: 2.2rem;
       }
+        br{
+       display: none;
+     }
+      .slide-main2{
+    flex-direction: column;
+    justify-content: center;
+  }
      }
      @media (max-width:576px) {
       .product-box img{
@@ -508,10 +567,10 @@ hr{
       }
 
       .navbar .first-list{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
       .navbar .last-list{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
          
       }
        .box2{
@@ -522,7 +581,16 @@ hr{
         align-items: start;
      
      }
-     
+       .slide-main2{
+    justify-content: center;
+       flex-direction: column;
+  }
+    .first-box h1{
+      font-size: 1.8rem;
+    }
+  br{
+    display: none;
+  }
     .card h1{
         font-size: 32px;
     }
@@ -564,7 +632,12 @@ hr{
       .offer{
         display: none;
       }
-
+        .navbar{
+        
+          justify-content: space-around;
+          
+        }
+       
       /* mobile slide menu (ONLY first-list) */
       .navbar .first-list{
         position: fixed;
@@ -594,7 +667,7 @@ hr{
       /* keep icons */
       .navbar .last-list li:nth-child(4),
       .navbar .last-list li:nth-child(5){
-        display: block;
+        display: none;
       }
 
       .hamburger{
@@ -644,6 +717,14 @@ hr{
       margin-left: 80px;
       
     }
+    .icon-box img{
+        width: 100px;
+
+    }
+    .slide-main2{
+    justify-content: center;
+    flex-direction: column;
+    }
 }
 
 
@@ -679,7 +760,10 @@ hr{
 
       .navbar .last-list li:nth-child(1),
       .navbar .last-list li:nth-child(2),
-      .navbar .last-list li:nth-child(3){
+      .navbar .last-list li:nth-child(3)
+      .navbar .last-list li:nth-child(5)
+      .navbar .last-list li:nth-child(4)
+      {
         display: none;
       }
 
