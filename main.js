@@ -78,3 +78,24 @@ function resetAutoSlide(){
 startAutoSlide();
 
 
+// section 
+const track = document.querySelector(".slider-track");
+  const slides = document.querySelectorAll(".commit-1");
+  const nextBtn = document.querySelector(".next");
+  const prevBtn = document.querySelector(".prev");
+
+  let index1 = 0;
+
+  function updateSlider() {
+    track.style.transform = `translateX(-${index1 * 100}%)`;
+  }
+
+  nextBtn.addEventListener("click", () => {
+    index1 = (index1 + 1) % slides.length;
+    updateSlider();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    index1 = (index1 - 1 + slides.length) % slides.length;
+    updateSlider();
+  });
