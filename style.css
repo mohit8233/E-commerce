@@ -503,6 +503,7 @@ hr{
   overflow: hidden;
   min-height: 500px;
   display: flex;
+  width: 100%;
   background: black;
   justify-content: center;
 }
@@ -515,7 +516,9 @@ hr{
 }
 .testimonial-slider {
   width: 100%;
-  max-width: 900px;
+  background: #000;
+
+  width: 100%;
   margin: 60px auto;
   position: relative;
   display: flex;
@@ -535,8 +538,9 @@ hr{
 
 .commit-1 {
   min-width: 100%;
-  background: #f8f8f8;
+  background: #000000;
   padding: 40px;
+  color: #e0e0e0;
   border-radius: 12px;
   text-align: center;
 }
@@ -550,7 +554,7 @@ hr{
 .commit-1 h3 {
   font-size: 16px;
   font-weight: 600;
-  color: #333;
+  color: #d3d3d3;
 }
 
 .stars i {
