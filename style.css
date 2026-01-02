@@ -576,7 +576,23 @@ hr{
 .nav-btn:hover {
   background: #444;
 }
-
+.shiping-box{
+  height: 200px;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  border: 2px solid black;
+  display: flex;
+   justify-content: center;
+   gap: 50px;
+}
+.shiping-card{
+  background-color: hsl(0, 0%, 94%);
+  width: 350px;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 30px;
+  height: 130px;
+}
 /* Responsive */
 @media (max-width: 600px) {
   .commit-1 {
